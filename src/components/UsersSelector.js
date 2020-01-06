@@ -3,7 +3,7 @@ import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import TextField from 'material-ui/TextField';
 
-class Users extends Component {
+class UsersSelector extends Component {
 	state = {
 		numOfUsers: 0,
 		users: []
@@ -12,9 +12,9 @@ class Users extends Component {
 	handleChange = (event, index, value) => this.setState({numOfUsers: value});
 
 	handleUserNameChange = (value, i) => {
-		const updatedusers = [...this.state.users];
-		updatedusers[i] = value;
-		this.setState({users: updatedusers})
+		const updatedUsers = [...this.state.users];
+		updatedUsers[i] = value;
+		this.setState({users: updatedUsers})
 	}
 
 	render() {
@@ -28,7 +28,7 @@ class Users extends Component {
 		}
 		return (<div>
 			<SelectField onChange={this.handleChange}
-					floatingLabelText="Оберіть кількість учасників" >
+					floatingLabelText={"Оберіть кількість учасників"} >
 					<MenuItem value={2} primaryText="2" />
 					<MenuItem value={3} primaryText="3" />
 					<MenuItem value={4} primaryText="4" />
@@ -39,4 +39,4 @@ class Users extends Component {
 
 }
 
-export default Users;
+export default UsersSelector;

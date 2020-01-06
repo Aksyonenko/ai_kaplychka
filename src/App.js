@@ -4,17 +4,16 @@ import CustomInput from './components/CustomInput';
 import StepsComponent from './components/StepsComponent';
 import TextField from 'material-ui/TextField';
 import PagesContainer from './pages/PagesContainer';
-
+import Layout from './components/Layout/Layout';
 
 class App extends Component {
 
 
   render() {
     return (
-      <div className="App">
-
+      <Layout>
         <PagesContainer />
-      </div>
+      </Layout>
     );
   }
 }

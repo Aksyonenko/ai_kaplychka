@@ -3,3 +3,8 @@
   max-width: 800px;
   padding-top: 200px;
 }
+
+body {
+  background-color: black;
+  color: grey;
+}
